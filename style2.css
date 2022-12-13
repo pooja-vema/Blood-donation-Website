@@ -1,0 +1,123 @@
+body {
+    text-align: center;
+    font-family: sans-serif; 
+    background-color: red;  
+}
+.top-container {
+    padding: 10px;
+    display: grid;
+    grid-template-columns: auto auto auto auto ;
+    grid-template-rows:auto auto auto auto  ;
+}
+.grid-item{
+    border: 1px solid black;
+    background-color: aqua;
+    padding: 10px;
+    width: 100%;
+    
+
+}
+.down-comtainer{
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 10px;
+   
+   
+}
+.grid-selection {
+   border: 1px solid black;
+   background-color: aquamarine;
+   width: 100%;
+   height: 125px;
+}
+.grid-value{
+    border: 1px solid black;
+    background-color: bisque;
+    height: 320px;
+}
+.grid-position{
+    border: 1px solid black;
+    background-color: rgb(72, 82, 72);
+    height: 300px;
+
+}
+.contact-page{
+    background-image: url(image.webp);
+    background-size: cover;
+    padding: 20%;
+    
+}
+
+
+
+
+.menu-bar{
+    background-color: rgb(71, 65, 65);
+    text-align: center;
+}
+.menu-bar .active{
+    background: rgb(14, 229, 229);
+    display: inline;
+    border-radius: 0.7vh;
+}
+.menu-bar ul{
+    display: inline-flex;
+    list-style: none;
+    color: white;
+}
+.menu-bar ul li{
+    padding: 0px 3px;
+    margin: 1vh 3vh;
+    width: auto;
+}
+.menu-bar ul li a{
+    text-decoration: none;
+    color: white;
+}
+.menu-bar ul li:hover{
+    background: rgb(14, 229, 229);
+    border-radius: 1vh;
+}
+.menu-bar .fa{
+    padding: 0.33vh;
+}
+
+.menu-bar .sub-list1{
+    background-color: rgba(96,92,92,0.461);
+   display: none;
+   width: 15vh;
+}
+
+.menu-bar ul li:hover .sub-list1{
+    display: flex;
+    position: absolute;
+    background: rgba(96,92,92,0.461);
+    margin: 0;
+    padding: 0;
+}
+.menu-bar ul li:hover .sub-list1 ul{
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+.menu-bar ul li:hover .sub-list1 ul li{
+    width: auto;
+    padding: .4vh;
+    background-color: rgba(76,99,117,0.662);
+    text-align: left;
+    display: flexbox;
+}
+.bottom-container{
+    height: 100%;
+    width: 100%;
+    font-size: 16px;
+    font-weight: 400;
+    border-radius: 16px;
+}
+.bottom-container input{
+    width: 40vw;
+    height: 25vh;
+    outline: none;
+    padding: 0 15px;
+    border: 1px solid #cacaca;
+}

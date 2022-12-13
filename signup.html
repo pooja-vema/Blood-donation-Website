@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup Form</title>
+    <link rel="stylesheet" href="signup.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.1/css/all.min.css">
+</head>
+<body>
+    <section class="container forms">
+        <div class="form login">
+            <div class="form-content">
+                <pre><header><div class="logobackground"><img src="blood.jpeg" alt="">
+Register</header> </div></pre>
+                <form action="#">
+                    <div class="field input-field">
+                        <input type="text" required autofocus="autofocus" placeholder="Enter your name*" class="input">
+                    </div>
+                    <div class="field input-field">
+                        <input type="email" required  placeholder="Enter your e-mail id*" class="input">
+                    </div>
+                    <div class="field input-field">
+                        <input type="number"  required minlength="10" maxlength="10" placeholder="Enter your Mobile Number*" class="input">
+                    </div><div class="field input-field">
+                        <input type="date"  required placeholder="Date of birth*" class="input">
+                    </div>
+                    <div class="field input-field">
+                        <select name="format" id="format">
+                            <option selected disabled>Your blood group</option>
+                            <option value="A+">A+</option>
+                            <option value="A+">B<sup>+</sup></option>
+                            <option value="A+">O<sup>+</sup></option>
+                            <option value="A+">AB<sup>+</sup></option>
+                            <option value="A+">A<sup>-</sup></option>
+                            <option value="A+">B<sup>-</sup></option>
+                            <option value="A+">O<sup>-</sup></option>
+                            <option value="A+">AB<sup>-</sup></option>
+                        </select>
+                    </div>
+                    <div class="field input-field">
+                        <input type="password" type="number" required minlength="6" maxlength="6" placeholder="Enter OTP*" class="password">
+                        <i class="fas fa-eye-slash"></i>
+                    </div>
+                    <div class="field input-field">
+                        <button><a href="index.html">REGISTER</a></button>
+                    </div>
+                    <div class="form-link">
+                        <span><a href="login.html"class="link login-link">Resend OTP</a></span>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>

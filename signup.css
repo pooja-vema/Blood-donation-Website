@@ -1,0 +1,120 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.container{
+    height: 130vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(71, 65, 65);
+}
+.logobackground{
+    display: inline;
+}
+.form{
+    position: absolute;
+    max-width: 430px;
+    width: 100%;
+    padding: 30px;
+    border-radius: 3vh;
+    background: white;
+}
+.form.signup{
+    opacity: 0;
+    pointer-events: none;
+}
+.forms.show-signup .form.signup{
+    opacity: 1;
+    pointer-events: auto;
+}
+.forms.show-signup .form.login{
+    opacity: 1;
+    pointer-events: auto;
+}
+header{
+    font-size: 28px;
+    font-weight: 600;
+    color: black;
+    text-align: center;
+}
+form{
+    margin-top: 30px;
+}
+.form .field{
+    position: relative;
+    height: 45px;
+    width: 100%;
+    margin-top: 20px;
+    border-radius: 6px;
+}
+.field input,
+.field button{
+    height: 100%;
+    width: 100%;
+    font-size: 16px;
+    font-weight: 400;
+    border-radius: 16px;
+}
+.field input{
+    outline: none;
+    padding: 0 15px;
+    border: 1px solid #cacaca;
+}
+.field input:focus{
+    border-bottom-width: 2px;
+}
+.fa-eye-slash{
+    font-size: 18px;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    position: absolute;
+    color: #8b8b8b;
+    cursor: pointer;
+    padding: 5px;
+}
+.field button{
+    color: rgb(238, 238, 248);
+    background-color: #0171d3;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+.field button:hover{
+    background-color: #016dcb;
+}
+.form-link{
+    text-align: center;
+    margin-top: 10px;
+}
+.form-link span,
+.form-link span a{
+    font-size: 14px;
+    font-weight: 400px;
+    color: #232836;
+}
+.form-link .forgot-pass{
+    opacity: 100%;
+    color: #232836;
+}
+.form a{
+    color: #e8ecef;
+    font-weight: 900;
+}
+.form-content a:hover{
+    text-decoration: underline;
+}
+select{
+    height: 100%;
+    width: 100%;
+    font-size: 16px;
+    font-weight: 400;
+    border-radius: 16px;
+    outline: none;
+    padding: 0 15px;
+    border: 1px solid #cacaca;
+}
